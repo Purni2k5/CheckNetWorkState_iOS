@@ -1,0 +1,6 @@
+framework module Pods_CheckNetWorkStateiOSTests {
+  umbrella header "Pods-CheckNetWorkStateiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

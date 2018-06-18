@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckNetWorkStateiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggp-gB-kgM">
+                                <rect key="frame" x="16" y="20" width="116" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="Amq-oF-CjN"/>
+                                </constraints>
+                                <state key="normal" title="ONLINEチェック"/>
+                                <connections>
+                                    <action selector="TouchOnlineCheck:" destination="BYZ-38-t0r" eventType="touchDown" id="pHc-va-4jU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONLINEチェック結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-AK-Iau" userLabel="オンラインチェック結果">
+                                <rect key="frame" x="16" y="50" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_______________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URH-lO-tWq" userLabel="line1">
+                                <rect key="frame" x="16" y="67" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-SO-Chf">
+                                <rect key="frame" x="16" y="88" width="153" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="7lN-rV-5WK"/>
+                                </constraints>
+                                <state key="normal" title="ネットワーク種別判定"/>
+                                <connections>
+                                    <action selector="TouchNetWorkCheck:" destination="BYZ-38-t0r" eventType="touchDown" id="3lS-j8-H5l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ネットワーク種別判定結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-o1-ab4" userLabel="ネットワーク種別判定ラベル">
+                                <rect key="frame" x="16" y="118" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_______________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnk-eI-FZ8" userLabel="line2">
+                                <rect key="frame" x="16" y="135" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DZ-vQ-Uqq">
+                                <rect key="frame" x="16" y="156" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="s8c-ga-Acb"/>
+                                </constraints>
+                                <state key="normal" title="電界強度取得"/>
+                                <connections>
+                                    <action selector="TouchNetStrengthCheck:" destination="BYZ-38-t0r" eventType="touchDown" id="wFt-3f-LnR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電界強度取得結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SM-Rl-r7E" userLabel="電界強度取得結果ラベル">
+                                <rect key="frame" x="16" y="186" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_______________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-xF-kyt" userLabel="line3">
+                                <rect key="frame" x="16" y="203" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-Z7-vVA">
+                                <rect key="frame" x="16" y="224" width="92" height="30"/>
+                                <state key="normal" title="電波状況追跡"/>
+                                <connections>
+                                    <action selector="TouchSignalScout:" destination="BYZ-38-t0r" eventType="touchDown" id="NUj-6z-gpg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pB-h6-O1Z">
+                                <rect key="frame" x="250" y="224" width="62" height="30"/>
+                                <state key="normal" title="追跡解除"/>
+                                <connections>
+                                    <action selector="TouchScoutCancel:" destination="BYZ-38-t0r" eventType="touchDown" id="c98-Or-69u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追跡状況を表示します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-Lu-mv1">
+                                <rect key="frame" x="16" y="254" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="URH-lO-tWq" firstAttribute="top" secondItem="CFL-AK-Iau" secondAttribute="bottom" id="0xZ-tp-h1t"/>
+                            <constraint firstItem="9pB-h6-O1Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="1Gq-8h-U5Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CeR-xF-kyt" secondAttribute="trailing" constant="16" id="2X1-dE-t9e"/>
+                            <constraint firstItem="Ggp-gB-kgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2a9-5B-OKP"/>
+                            <constraint firstItem="CeR-xF-kyt" firstAttribute="top" secondItem="5SM-Rl-r7E" secondAttribute="bottom" id="4c0-2a-pIc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5SM-Rl-r7E" secondAttribute="trailing" constant="16" id="7RP-ip-jcP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0DZ-vQ-Uqq" secondAttribute="trailing" constant="20" symbolic="YES" id="7km-Nm-bvT"/>
+                            <constraint firstItem="5SM-Rl-r7E" firstAttribute="top" secondItem="0DZ-vQ-Uqq" secondAttribute="bottom" id="8fP-rn-5Zq"/>
+                            <constraint firstItem="Cnk-eI-FZ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9HJ-Xi-Dcv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cnk-eI-FZ8" secondAttribute="trailing" constant="16" id="Djs-jc-kf4"/>
+                            <constraint firstItem="0DZ-vQ-Uqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Gdm-4H-z8X"/>
+                            <constraint firstItem="4JJ-SO-Chf" firstAttribute="top" secondItem="URH-lO-tWq" secondAttribute="bottom" id="Iml-K5-Zww"/>
+                            <constraint firstItem="Cnk-eI-FZ8" firstAttribute="top" secondItem="rMw-o1-ab4" secondAttribute="bottom" id="KtB-xe-xzb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3WC-Z7-vVA" secondAttribute="trailing" constant="20" symbolic="YES" id="OIM-eG-QtW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="URH-lO-tWq" secondAttribute="trailing" constant="16" id="OeL-Zx-QoD"/>
+                            <constraint firstItem="5SM-Rl-r7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QbS-g8-fL1"/>
+                            <constraint firstItem="Um9-Lu-mv1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SaB-LQ-iHH"/>
+                            <constraint firstItem="rMw-o1-ab4" firstAttribute="top" secondItem="4JJ-SO-Chf" secondAttribute="bottom" id="Shc-0P-ryN"/>
+                            <constraint firstItem="Um9-Lu-mv1" firstAttribute="top" secondItem="CeR-xF-kyt" secondAttribute="bottom" constant="30" id="cFq-GV-o8m"/>
+                            <constraint firstItem="rMw-o1-ab4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dCf-lZ-6LG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Um9-Lu-mv1" secondAttribute="trailing" constant="16" id="doq-gS-jCw"/>
+                            <constraint firstItem="CeR-xF-kyt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eaw-Wa-TWb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMw-o1-ab4" secondAttribute="trailing" constant="16" id="ehZ-am-3bi"/>
+                            <constraint firstItem="CFL-AK-Iau" firstAttribute="top" secondItem="Ggp-gB-kgM" secondAttribute="bottom" id="eqc-El-doG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFL-AK-Iau" secondAttribute="trailing" constant="16" id="gxX-lt-1vD"/>
+                            <constraint firstItem="CFL-AK-Iau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hys-5k-eLw"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ggp-gB-kgM" secondAttribute="trailing" constant="20" symbolic="YES" id="jGA-97-tAH"/>
+                            <constraint firstItem="3WC-Z7-vVA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mjx-s6-dJF"/>
+                            <constraint firstItem="4JJ-SO-Chf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nrn-MM-mn7"/>
+                            <constraint firstItem="9pB-h6-O1Z" firstAttribute="top" secondItem="CeR-xF-kyt" secondAttribute="bottom" id="obi-d1-4uM"/>
+                            <constraint firstItem="Ggp-gB-kgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qCX-Ho-ICu"/>
+                            <constraint firstItem="0DZ-vQ-Uqq" firstAttribute="top" secondItem="Cnk-eI-FZ8" secondAttribute="bottom" id="sPz-P0-xIN"/>
+                            <constraint firstItem="3WC-Z7-vVA" firstAttribute="top" secondItem="CeR-xF-kyt" secondAttribute="bottom" id="sw3-Je-AdZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9pB-h6-O1Z" secondAttribute="trailing" constant="8" id="whM-dB-cQ6"/>
+                            <constraint firstItem="URH-lO-tWq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wsB-RF-Mbo"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4JJ-SO-Chf" secondAttribute="trailing" constant="20" symbolic="YES" id="x8Q-3l-dgv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelNetStrengthCheck" destination="5SM-Rl-r7E" id="hnG-Np-HAm"/>
+                        <outlet property="labelNetWorkTypeCheck" destination="rMw-o1-ab4" id="sCN-BU-dGl"/>
+                        <outlet property="labelOnlineCheck" destination="CFL-AK-Iau" id="KPM-7o-VAN"/>
+                        <outlet property="labelSignalScout" destination="Um9-Lu-mv1" id="Zx5-BA-ilH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.375" y="35.91549295774648"/>
+        </scene>
+    </scenes>
+</document>

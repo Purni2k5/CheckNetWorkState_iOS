@@ -1,0 +1,6 @@
+framework module Pods_CheckNetWorkStateiOS {
+  umbrella header "Pods-CheckNetWorkStateiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
