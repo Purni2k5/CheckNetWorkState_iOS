@@ -65,9 +65,17 @@ class ViewController: UIViewController {
     // ボタンアクション：電界強度取得
     @IBAction func TouchNetStrengthCheck(_ sender: Any) {
         //let signalStrength:SignalStrength = SignalStrength.init()
-        let result:Int32 = SignalStrength.check()
-        print("SignalStrength:" + String(result))
-        self.labelNetStrengthCheck.text = "電界強度は：" + String(result)
+        let result: Int
+        // 端末種別を判定
+        if UIDevice.current.isiPhoneX {
+            // iPhone Xの場合
+            result = SignalStrength.checkForX()
+        } else {
+            // iPhone X以外の場合
+            result = SignalStrength.check()
+            print("SignalStrength:" + String(result))
+            self.labelNetStrengthCheck.text = "電界強度は：" + String(result)
+        }
     }
     
     // ボタンアクション：電波状況追跡
@@ -109,6 +117,5 @@ class ViewController: UIViewController {
             self.labelSignalScout.text = "OFFLINEです" + netType
         }
     }
-    
 }
 

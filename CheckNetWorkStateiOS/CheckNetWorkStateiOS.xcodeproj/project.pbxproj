@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F812315AE1144D9A5AE3E3A /* Pods_CheckNetWorkStateiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B523F2BD7FDEA9D5D7DB21 /* Pods_CheckNetWorkStateiOSTests.framework */; };
 		33FE9DF85C4A1A1BA60ED310 /* Pods_CheckNetWorkStateiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60179E6F09813FAA87738CBE /* Pods_CheckNetWorkStateiOSUITests.framework */; };
+		C23765BD20ECD23B00DA9876 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23765BC20ECD23B00DA9876 /* UIDeviceExtension.swift */; };
+		C23765BF20ECD43F00DA9876 /* SignalStrength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23765BE20ECD43F00DA9876 /* SignalStrength.swift */; };
 		C242DA0C20D7494B00E7562A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242DA0B20D7494B00E7562A /* AppDelegate.swift */; };
 		C242DA0E20D7494B00E7562A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242DA0D20D7494B00E7562A /* ViewController.swift */; };
 		C242DA1120D7494B00E7562A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C242DA0F20D7494B00E7562A /* Main.storyboard */; };
@@ -16,7 +18,7 @@
 		C242DA1620D7494D00E7562A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C242DA1420D7494D00E7562A /* LaunchScreen.storyboard */; };
 		C242DA2120D7494D00E7562A /* CheckNetWorkStateiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242DA2020D7494D00E7562A /* CheckNetWorkStateiOSTests.swift */; };
 		C242DA2C20D7494D00E7562A /* CheckNetWorkStateiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242DA2B20D7494D00E7562A /* CheckNetWorkStateiOSUITests.swift */; };
-		C242DA3F20D7954000E7562A /* SignalStrength.m in Sources */ = {isa = PBXBuildFile; fileRef = C242DA3E20D7954000E7562A /* SignalStrength.m */; };
+		C242DA3F20D7954000E7562A /* bkSignalStrength.m in Sources */ = {isa = PBXBuildFile; fileRef = C242DA3E20D7954000E7562A /* bkSignalStrength.m */; };
 		F72729325E64D7766A85F78B /* Pods_CheckNetWorkStateiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F37628F6144B77632C179E /* Pods_CheckNetWorkStateiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,9 @@
 		60179E6F09813FAA87738CBE /* Pods_CheckNetWorkStateiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckNetWorkStateiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F37628F6144B77632C179E /* Pods_CheckNetWorkStateiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckNetWorkStateiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B583922429988AEDB002AC /* Pods-CheckNetWorkStateiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckNetWorkStateiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckNetWorkStateiOSUITests/Pods-CheckNetWorkStateiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C23765BC20ECD23B00DA9876 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		C23765BE20ECD43F00DA9876 /* SignalStrength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalStrength.swift; sourceTree = "<group>"; };
+		C23765C020ECDA9E00DA9876 /* OCCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCatch.h; sourceTree = "<group>"; };
 		C242DA0820D7494B00E7562A /* CheckNetWorkStateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckNetWorkStateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C242DA0B20D7494B00E7562A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C242DA0D20D7494B00E7562A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,9 +66,9 @@
 		C242DA2D20D7494D00E7562A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C242DA3920D74A8000E7562A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		C242DA3A20D74A8000E7562A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		C242DA3C20D7952000E7562A /* SignalStrength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalStrength.h; sourceTree = "<group>"; };
+		C242DA3C20D7952000E7562A /* bkSignalStrength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bkSignalStrength.h; sourceTree = "<group>"; };
 		C242DA3D20D7953F00E7562A /* CheckNetWorkStateiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CheckNetWorkStateiOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		C242DA3E20D7954000E7562A /* SignalStrength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalStrength.m; sourceTree = "<group>"; };
+		C242DA3E20D7954000E7562A /* bkSignalStrength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bkSignalStrength.m; sourceTree = "<group>"; };
 		E45ADF4B7ABE611566CC0EAC /* Pods-CheckNetWorkStateiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckNetWorkStateiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckNetWorkStateiOSTests/Pods-CheckNetWorkStateiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,9 +154,12 @@
 				C242DA1220D7494D00E7562A /* Assets.xcassets */,
 				C242DA1420D7494D00E7562A /* LaunchScreen.storyboard */,
 				C242DA1720D7494D00E7562A /* Info.plist */,
-				C242DA3C20D7952000E7562A /* SignalStrength.h */,
-				C242DA3E20D7954000E7562A /* SignalStrength.m */,
+				C242DA3C20D7952000E7562A /* bkSignalStrength.h */,
+				C242DA3E20D7954000E7562A /* bkSignalStrength.m */,
+				C23765C020ECDA9E00DA9876 /* OCCatch.h */,
 				C242DA3D20D7953F00E7562A /* CheckNetWorkStateiOS-Bridging-Header.h */,
+				C23765BC20ECD23B00DA9876 /* UIDeviceExtension.swift */,
+				C23765BE20ECD43F00DA9876 /* SignalStrength.swift */,
 			);
 			path = CheckNetWorkStateiOS;
 			sourceTree = "<group>";
@@ -385,9 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C242DA3F20D7954000E7562A /* SignalStrength.m in Sources */,
+				C242DA3F20D7954000E7562A /* bkSignalStrength.m in Sources */,
+				C23765BD20ECD23B00DA9876 /* UIDeviceExtension.swift in Sources */,
 				C242DA0E20D7494B00E7562A /* ViewController.swift in Sources */,
 				C242DA0C20D7494B00E7562A /* AppDelegate.swift in Sources */,
+				C23765BF20ECD43F00DA9876 /* SignalStrength.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

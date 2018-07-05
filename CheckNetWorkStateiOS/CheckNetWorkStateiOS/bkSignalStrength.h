@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SignalStrength : NSObject
+@interface bkSignalStrength : NSObject
 
 + (int)check;
 

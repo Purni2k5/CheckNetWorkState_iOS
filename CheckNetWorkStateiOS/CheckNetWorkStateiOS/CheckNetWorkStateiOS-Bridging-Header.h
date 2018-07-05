@@ -5,6 +5,8 @@
 #ifndef SignalStrength_h
 #define SignalStrength_h
 
-#import "SignalStrength.h"
+#import "bkSignalStrength.h"
+#import "OCCatch.h"
+#import <sys/utsname.h>
 
 #endif

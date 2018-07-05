@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Hayato Hirata. All rights reserved.
 //
 
-#import "SignalStrength.h"
-@implementation SignalStrength
+#import "bkSignalStrength.h"
+@implementation bkSignalStrength
 
 //- (id)init
 //{
@@ -19,7 +19,7 @@
 //   異常時：0
 // 参考値：
 //   強 -45 ~ -130 弱
-//   carrier:
+//   carrier:  要調査
 //   wifi   :バリ3時に取得で-51だった。
 + (int) check
 {
